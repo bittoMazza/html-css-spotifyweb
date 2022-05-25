@@ -9,9 +9,19 @@
     --hover-color: #aaa
 }
 
+img{
+    width: 100%;
+}
 
 .f-size-20{
     font-size: 20px;
+}
+
+.disp-i-b{
+    display: inline-block;
+}
+.pad-b-20{
+    padding-bottom: 20px;
 }
 
 ul li{
@@ -28,6 +38,7 @@ a{
 
 .nav-content-section ul li{
     display: inline-block;
+    line-height: 40px;
 
 }
 .text-al-c{
@@ -50,7 +61,7 @@ a{
 }
 
 footer{
-    height: 150px;
+    height: 100px;
     background-color: grey;
 }
 
@@ -61,8 +72,14 @@ footer{
 .pad-t-20{
     padding-top: 20px;
 }
+
+.pad-t-40{
+    padding-top: 40px;
+}
+
 .pad-l-r-20{
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .li-menu{
     padding:10px 20px;
@@ -70,26 +87,27 @@ footer{
 
 .menu-section{
     background-color: black;
-    width: 300px;
+    width: 250px;
     padding-top: 20px;
 }
 
 .s-logo{
     display: none;
     color:white;
+    width: 16px;
 }
 
 .content-section{
-    padding-top: 130px;
-    width: calc(100% - 300px);
-    height: calc(100vh - 150px);
+    padding-top: 120px;
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
     background-color: #141922;
     overflow: auto;
 }
 
 .upgrade{
     height: 100px;
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     position: fixed;
     top: 0;
     background-color: rgba(000, 000, 000, 0.5);
@@ -103,4 +121,71 @@ footer{
     border: solid 1px white;
     margin-right: 25px;
     display: inline-block;
+}
+
+.row{
+    padding: 30px 0;
+}
+
+.card-container{
+    display: flex;
+    gap: 20px;
+}
+
+.container-title{
+    color:white;
+    padding-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+.card-title{
+    padding: 10px 0;
+    color:white;
+}
+
+.small-text{
+    color: #ccc;
+}
+.card{
+    width: calc(100% / 6 );
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+@media all and (max-width:1100px){
+
+    .card-container{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+
+@media all and (max-width:700px){
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media all and (max-width:601px){
+    .menu-section{
+        width: 100%;
+    }
+
+    .menu-section span{
+        display: none;
+    }
+
+    .b-logo{
+        display: none;
+    }
+
+    .s-logo{
+        display:block;
+    }
 }
