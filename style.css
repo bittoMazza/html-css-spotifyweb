@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --hover-color: #aaa
+}
+
+
+.f-size-20{
+    font-size: 20px;
+}
+
+ul li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-content-section{
+    margin: 0 auto;
+}
+
+.nav-content-section ul li{
+    display: inline-block;
+
+}
+.text-al-c{
+    text-align: center;
+}
+
+
+.b-logo{
+    width: 200px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.pre-hover-color{
+    color: var(--hover-color);
+}
+
+.pre-hover-color:hover{
+    color: white;
+}
+
+footer{
+    height: 150px;
+    background-color: grey;
+}
+
+.main-section{
+    display: flex;
+}
+
+.pad-t-20{
+    padding-top: 20px;
+}
+.pad-l-r-20{
+    padding: 0 20px;
+}
+.li-menu{
+    padding:10px 20px;
+}
+
+.menu-section{
+    background-color: black;
+    width: 300px;
+    padding-top: 20px;
+}
+
+.s-logo{
+    display: none;
+    color:white;
+}
+
+.content-section{
+    padding-top: 130px;
+    width: calc(100% - 300px);
+    height: calc(100vh - 150px);
+    background-color: #141922;
+    overflow: auto;
+}
+
+.upgrade{
+    height: 100px;
+    width: calc(100% - 300px);
+    position: fixed;
+    top: 0;
+    background-color: rgba(000, 000, 000, 0.5);
+    text-align: right;
+}
+
+.upgrade-btn{
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: solid 1px white;
+    margin-right: 25px;
+    display: inline-block;
+}
