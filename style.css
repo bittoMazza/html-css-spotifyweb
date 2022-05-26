@@ -26,6 +26,8 @@ a{
 
 /* CLASSI GENERICHE */
 
+
+
 .f-size-20{
     font-size: 20px;
 }
@@ -144,9 +146,30 @@ a{
     background-color: white;
 }
 
-.playlist-container{
+.playlist-c-items{
+    height: 200px;
     overflow: auto;
 }
+
+.playlist-c-items::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.playlist-c-items::-webkit-scrollbar-track {
+    background:black 
+  }
+   
+  /* Handle */
+.playlist-c-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+.playlist-c-items::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 .playlist-items{
     padding: 10px 0 ;
