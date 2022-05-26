@@ -105,6 +105,7 @@ html,body{
     background-color: black;
     width: 250px;
     padding:20px 0;
+    position: relative;
 }
 
 
@@ -294,6 +295,7 @@ html,body{
 footer{
     height: 90px;
     background-color: #282828;
+    position: relative;
 }
 
 .footer-container{
@@ -433,7 +435,7 @@ h4{
 
 @media all and (max-width:1099px){
 
-    .center-column i{
+    .center-column .top-bar i{
         font-size: 20px;
     }
 
@@ -451,7 +453,7 @@ h4{
 
 @media all and (max-width:700px){
 
-    .center-column i{
+    .center-column .top-bar i{
         font-size: 18px;
         padding: 0 10px;
     }
@@ -467,7 +469,7 @@ h4{
 
 @media all and (max-width:601px){
     
-    .center-column i{
+    .center-column .top-bar i{
         font-size: 16px;
     }
 
