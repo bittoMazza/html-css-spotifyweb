@@ -14,7 +14,7 @@
 <body>
     <main>
         <section class="main-section">
-            <section class="menu-section">
+            <section class="menu-section d-flex f-column">
                 <img class="b-logo" src="./img/logo.svg" alt="logo-spotify">
                 <img class="s-logo" src="./img/favicon.ico" alt="logo-spotify">
                 <nav class="nav-menu-section">
@@ -24,6 +24,25 @@
                         <li class="li-menu"><a class="pre-hover-color " href="#"><i class="fa-solid fa-magnifying-glass"></i><span> La tua libreria</span></a></li>
                     </ul>
                 </nav>
+                <div class="playlist-container pad-l-r-20">
+                    <h4 class="pad-b-20 pad-t-20">Playlist</h4>
+                    <span class="add-playlist"> + </span><span class="pre-hover-color prova"> Crea Playlist </span>
+                    <div class="playlist-container pad-t-20">
+                        <ul>
+                            <li class="playlist-items pre-hover-color">Nome playlist</li>
+                            <li class="playlist-items pre-hover-color">Nome playlist</li>
+                            <li class="playlist-items pre-hover-color">Nome playlist</li>
+                            <li class="playlist-items pre-hover-color">Nome playlist</li>
+                            <li class="playlist-items pre-hover-color">Nome playlist</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="last-menu-container pad-l-r-20">
+                    <i class="fa-solid fa-circle-arrow-down pre-hover-color"></i><span class="pre-hover-color"> Installa l'app</span>
+                    <hr class="separator pad-l-r-20">
+                    <i class="fa-solid fa-user pre-hover-color"></i><span class="user-name"> John Doe</span>
+                </div>
             </section>
             <section class="content-section">
                 <div class="upgrade">
@@ -31,7 +50,7 @@
                 </div>
                 <nav class="nav-content-section text-al-c" >
                     <ul>
-                        <li class="pre-hover-color pad-l-r-20">IN EVIDENZA</li>
+                        <li class="pre-hover-color pad-l-r-20">IN EVIDENZA  <div class="green-space"></div></li>
                         <li class="pre-hover-color pad-l-r-20">PODCAST</li>
                         <li class="pre-hover-color pad-l-r-20">CLASSIFICHE</li>
                         <li class="pre-hover-color pad-l-r-20">GENERI E MOOD</li>
@@ -39,13 +58,16 @@
                         <li class="pre-hover-color pad-l-r-20">SCOPRI</li>
                     </ul>
                 </nav>
-                <div class="content pad-l-r-20">
-                    <div class="row">
+
+                <!-- CONTAINER DELLE ROW -->
+                <div class="content pad-l-r-20"> 
+                    <div class="row"> 
                         <h2 class="container-title">Recently played</h2>
                         <div class="card-container">
                             <div class="card">
                                 <div class="card-image">
                                     <img src="./img/metal_lifting.jpg" alt="a-quiet-place">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
                                 </div>       
                                 <div class="text-al-c">
                                     <h3 class="card-title">Heavy metal</h3>
@@ -55,6 +77,7 @@
                             <div class="card">
                                 <div class="card-image">
                                     <img src="./img/stranger.jpeg" alt="a-quiet-place">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
                                 </div>
                                 <div class="text-al-c">
                                     <h3 class="card-title">Heavy metal</h3>
@@ -64,6 +87,7 @@
                             <div class="card">
                                 <div class="card-image">
                                     <img src="./img/aquietplace.jpeg" alt="a-quiet-place">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
                                 </div>                         
                                 <div class="text-al-c">
                                     <h3 class="card-title">Heavy metal</h3>
@@ -73,6 +97,7 @@
                             <div class="card">
                                 <div class="card-image">
                                     <img src="./img/split.jpeg" alt="a-quiet-place">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
                                 </div>                              
                                 <div class="text-al-c">
                                     <h3 class="card-title">Heavy metal</h3>
@@ -82,6 +107,7 @@
                             <div class="card">
                                 <div class="card-image">
                                     <img src="./img/cure.jpeg" alt="a-quiet-place">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
                                 </div>                            
                                 <div class="text-al-c">
                                     <h3 class="card-title">Heavy metal</h3>
@@ -89,8 +115,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card.image">
+                                <div class="card-image">
                                     <img src="./img/sinister.jpeg" alt="a-quiet-place">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
                                 </div>
                                 <div class="text-al-c">
                                     <h3 class="card-title">Heavy metal</h3>
@@ -103,14 +130,20 @@
                         <h2 class="container-title">Creato per John Doe</h2>
                         <span class="small-text pad-b-20 disp-i-b">Piu ascolti,piu saranno accurati i suggerimenti</span>
                         <div class="card-container">
-                            <a href="#" class="card">
-                                <img src="./img/radar.jpeg" alt="release-radar">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./img/radar.jpeg" alt="release-radar">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
+                                </div>                                
                                 <div class="text-al-c">
                                     <h3 class="card-title">Release-radar</h3>
                                 </div>
-                            </a>
+                            </div>
                             <div class="card">
-                                <img src="./img/mixdaily.jpeg" alt="release-radar">
+                                <div class="card-image">
+                                    <img src="./img/mixdaily.jpeg" alt="release-radar">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
+                                </div>                               
                                 <div class="text-al-c">
                                     <h3 class="card-title">Release-radar</h3>
                                 </div>
@@ -122,13 +155,19 @@
                         <span class="small-text pad-b-20 disp-i-b">Piu ascolti,piu saranno accurati i suggerimenti</span>
                         <div class="card-container">
                             <a href="#" class="card">
-                                <img class="circle" src="./img/youg.jpeg" alt="release-radar">
+                                <div class="card-image">
+                                    <img class="circle" src="./img/youg.jpeg" alt="release-radar">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
+                                </div>                                
                                 <div class="text-al-c">
                                     <h3 class="card-title">Lana del Rey</h3>
                                 </div>
                             </a>
                             <div class="card">
-                                <img class="circle" src="./img/einaudi.jpeg" alt="release-radar">
+                                <div class="card-image">
+                                    <img class="circle" src="./img/einaudi.jpeg" alt="release-radar">
+                                    <i class="fa-solid fa-circle-play center-icon"></i>
+                                </div>                               
                                 <div class="text-al-c">
                                     <h3 class="card-title">Release-radar</h3>
                                 </div>
@@ -159,8 +198,11 @@
                     <i class="fa-solid fa-rotate-right"></i>
                </div>
                <div class="bottom-bar pad-t-20">
-                    <span>0.2</span>
-                    <div></div>
+                    <span> 0.2 </span>
+                    <div class="slider">
+
+                    </div>
+                    <span> 4.20 </span>
                </div>
             </div>
             <div class="footer-column right-column">
@@ -168,7 +210,9 @@
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-display"></i>
                 <div class="slider">
-
+                    <div class="full-part">
+                        
+                    </div>
                 </div>
             </div>
         </div>
