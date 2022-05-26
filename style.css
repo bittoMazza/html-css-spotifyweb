@@ -140,6 +140,14 @@ a{
     background-color: var(--hover-color);
 }
 
+.add-playlist:hover{
+    background-color: white;
+}
+
+.playlist-container{
+    overflow: auto;
+}
+
 .playlist-items{
     padding: 10px 0 ;
 }
@@ -242,12 +250,16 @@ a{
     border-radius: 50%;
 }
 
+/* ############ SEZIONE FOOTER ############### */
+
+
 footer{
     height: 90px;
     background-color: #282828;
 }
 
 .footer-container{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,6 +267,10 @@ footer{
 
 .footer-column{
     width: 30%;
+}
+
+.center-column{
+    width: 35%;
 }
 
 .song-image{
@@ -265,6 +281,17 @@ footer{
     padding: 0 10px;
 }
 
+.bottom-bar{
+    width: 100%;
+}
+
+.central-slider{
+    display: inline-block;
+    width: 80%;
+    height: 10px;
+    background-color:#aaa;
+}
+
 h4{
     color: var(--main-text);
 }
@@ -272,8 +299,13 @@ h4{
 .center-column i{
     color: var(--main-text);
     text-align: center;
-    font-size: 26px;
+    font-size: 1.5rem;
     padding: 0 20px;
+}
+
+.bottom-bar span{
+    margin:0 5px;
+    color:white;
 }
 
 
@@ -281,18 +313,21 @@ h4{
     color: white;
 }
 
-.top-bar,.bottom-bar{
-    height: 50%;
+
+.right-column{
+    text-align: right;
 }
 
 .slider{
     display: inline-block;
     min-width:100px;
     height: 10px;
-    width: 60%;
+    width: 50%;
     background-color:#aaa;
     line-height: 0;
 }
+
+
 
 /* .nav-content-section li:first-child{
     border-bottom: 2px solid greenyellow;
