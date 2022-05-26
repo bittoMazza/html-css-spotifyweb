@@ -222,6 +222,12 @@ a{
     font-size:18px
 }
 
+.green-space{
+    width: 40px;
+    height: 2px;
+    background-color: greenyellow;
+    margin: 0 auto;
+}
 .row{
     padding: 30px 0;
 }
@@ -294,39 +300,63 @@ footer{
 
 .center-column{
     width: 35%;
+    align-self: center;
 }
 
 .song-image{
     max-width: 50px;
 }
 
+.song-name{
+    font-size: 14px;
+}
+
 .song-information,.footer-container i{
     padding: 0 10px;
 }
 
+
+.right-column {
+    text-align: right;
+}
+
+.right-column i{
+    padding: 0 5px;
+}
+
 .bottom-bar{
+    padding-top: 5px;
     width: 100%;
+    text-align: center;
 }
 
 .central-slider{
     display: inline-block;
-    width: 80%;
+    width: 70%;
     height: 10px;
     background-color:#aaa;
 }
 
 h4{
     color: var(--main-text);
+    font: 15px;
 }
+
+
 
 .center-column i{
     color: var(--main-text);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 24px;
     padding: 0 20px;
 }
 
+.top-bar{
+    text-align: center;
+}
+
 .bottom-bar span{
+    font-size: 12px;
     margin:0 5px;
     color:white;
 }
@@ -337,15 +367,12 @@ h4{
 }
 
 
-.right-column{
-    text-align: right;
-}
+
 
 .slider{
     display: inline-block;
-    min-width:100px;
     height: 10px;
-    width: 50%;
+    width: 40%;
     background-color:#aaa;
     line-height: 0;
 }
@@ -357,12 +384,7 @@ h4{
 }
  */
 
- .green-space{
-     width: 40px;
-     height: 2px;
-     background-color: greenyellow;
-     margin: 0 auto;
- }
+
 .full-part{
     text-align: right;
     display: inline-block;
@@ -378,6 +400,13 @@ h4{
 
 @media all and (max-width:1099px){
 
+    .center-column i{
+        font-size: 20px;
+    }
+
+    .bottom-bar span{
+        font-size: 10px;
+    }
     .card-container{
         flex-wrap: wrap;
     }
@@ -388,12 +417,34 @@ h4{
 }
 
 @media all and (max-width:700px){
+
+    .center-column i{
+        font-size: 18px;
+    }
+    
+    .bottom-bar span{
+        font-size: 8px;
+    }
+    
     .card{
         width: calc(100% / 2 - 10px);
     }
 }
 
 @media all and (max-width:601px){
+    
+    .center-column i{
+        font-size: 16px;
+    }
+
+    .right-column i{
+        font-size: 12px;
+    }
+
+    .footer-container{
+        padding: 0 10px;
+    }
+    
     .menu-section{
         width: 50px;
         padding: 10px 0;
