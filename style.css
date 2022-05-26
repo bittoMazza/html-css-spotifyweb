@@ -23,6 +23,14 @@ a{
     text-decoration: none;
 }
 
+html,body{
+    height: 100vh;
+}
+
+.main-section{
+    height: calc(100vh - 90px);
+}
+
 
 /* CLASSI GENERICHE */
 
@@ -93,6 +101,7 @@ a{
 /* SEZIONE NAV LATERALE */
 
 .menu-section{
+    height: 100%;
     background-color: black;
     width: 250px;
     padding:20px 0;
@@ -193,7 +202,7 @@ a{
 .content-section{
     padding-top: 120px;
     width: calc(100% - 250px);
-    height: calc(100vh - 90px);
+    height: 100%;
     background-color: #141922;
     overflow: auto;
 }
@@ -292,6 +301,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 .footer-column{
@@ -334,6 +344,7 @@ footer{
     display: inline-block;
     width: 70%;
     height: 10px;
+    border-radius: 10px;
     background-color:#aaa;
 }
 
@@ -372,12 +383,34 @@ h4{
 .slider{
     display: inline-block;
     height: 10px;
+    border-radius: 10px;
     width: 40%;
     background-color:#aaa;
     line-height: 0;
 }
 
+.inside-slide{
+    height: 10px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: right;
+}
 
+.fa-solid.fa-circle{
+    height: 12px;
+    padding: 0;
+    display: none;
+    color:white
+}
+
+.inside-slide:hover{
+    background-color: greenyellow;
+}
+
+.inside-slide:hover .fa-solid.fa-circle{
+    display: inline-block;
+}
 
 /* .nav-content-section li:first-child{
     border-bottom: 2px solid greenyellow;
@@ -420,6 +453,7 @@ h4{
 
     .center-column i{
         font-size: 18px;
+        padding: 0 10px;
     }
     
     .bottom-bar span{
