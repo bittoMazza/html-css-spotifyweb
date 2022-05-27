@@ -156,9 +156,6 @@ html,body{
     background-color: white;
 }
 
-.playlist-c-items{
-
-}
 
 .playlist-c-items ul{
     height:calc(100vh - 550px);
@@ -437,10 +434,6 @@ h4{
     background-color: white;
 }
 
-.full-part::after{
-    font: var(--fa-font-solid);
-    content:'\f111';
-}
 
 @media all and (max-width:1099px){
 
